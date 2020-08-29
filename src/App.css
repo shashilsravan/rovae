@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.boddy{
+  background: #000000;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
   flex-direction: column;
+  background: #191919;
+  font-family: Inter;
+  color: #ebebeb;
+
+}
+.navbar-top{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+}
+.search-option{
+  margin: 1rem 0;
+  border-radius: 10px;
+  border-color: white;
+  border-width: 0.01rem;
+  padding: 0.4rem 0.8rem;
+  color: #8c8ca1;
+  font-size: 16px;
+  background: black;
+  font-family: "Work Sans";
+}
+.title-in{
+  /* text-align: center; */
+  display: flex;
+  font-size: 16px;
+}
+.line{
+  margin: 1rem auto;
+  width: 100%;
+  border-bottom: 0.1rem solid #575767;
+}
+li{
+  font-size: 14px;
+  list-style: none;
+}
+.hide{
+  display: none;
+}
+.search-option:focus{
+  outline: 0;
+  border-color: #0086ff;
+  border-width: 0.1rem;
+  /* box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8); */
+}
+.toggled-region{
+  transition: height 5s;
+  animation-timing-function: linear;
+}
+.navbar-image{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  height: 60px;
+  width: auto;
+  cursor: pointer;
+}
+.profile-card{
+  display: none;
+}
+.power-attr{
+  padding: 2rem;
+  margin: 2rem;
+  background: #191919;
+  border: 0.1rem solid;
+  border-radius: 25px;
+  border-color: #575767;
+}
+.custom-checkbox
+.custom-control-label::before {
+  border-color: gray;
+  border-radius: 0px;
+  background-color: black;
+}
+.title-out{
+  color: #cccdcd;
+  font-family: Inter;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.vline{
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+.ccol{
+  display: flex;
+  margin: 0.3rem 0.5rem;
+}
+.custom-control-label{
   color: white;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: Inter;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width:750px){
+  .hide{
+    display: inline;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-image{
+    grid-area: hello;
+    height: 100px;
+    margin-left: 2.5rem;
+    width: auto;
+  }
+  .navbar-top{
+    position: absolute;
+    left: 20px;
+    display: inline;
+  }
+  .search-option{
+    position: absolute;
+    top: 130px;
+  }
+  .navbar-top span{
+    position: absolute !important;
+    top: 155px !important;
+    left: 215px;
+  }
+  .navbar{
+    height: 100vh;
+    width: 260px;
+    border-right: 0.01rem solid #8c8ca1;
+  }
+  .title-in{
+    margin: 0.7rem 1rem;
+  }
+  li{
+    margin: 0.20rem 0;
+  }
+  .toggled-region{
+    position: absolute;
+    left: 30px;
+    top: 210px;
+  }
+  .profile-card{
+    display: inline;
+    margin-bottom: 1rem;
+  }
+  .profile-image{
+    height: 60px;
+    margin: 0 1.2rem 0 1rem;
+    border-radius: 35px;
+    border: 3px solid #0086ff;
+  }
+  .remaining{
+    position: absolute;
+    left: 270px;
+    width: 80%;
+    top: 20px;
+  }
+  .power-attr{
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+  }
+  .vline{
+    margin: 0 3rem;
+    border-left: 1px solid gray;
+    height: 100px;
+  }
+  .custom-control-label{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Inter;
   }
 }
