@@ -77,7 +77,7 @@ li{
   content: "";
   background-color: black;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   top: 0.05rem;
   left: -1.6rem;
   width: 1.35rem;
@@ -85,26 +85,25 @@ li{
 }
 .custom-control-input:focus
 {
-  border-radius: 10px;
+  border-radius: 5px;
   outline: 0;
 }
 
 .custom-control-label{
   padding-left: 5px;
-  border-radius: 10px;
 }
 
 .custom-checkbox{
   padding: 0.1rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .custom-checkbox
 .custom-control-label::before {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .checkbox-lg .custom-checkbox:checked
 .custom-control-label::after{
-  border-radius: 10px;
+  border-radius: 5px;
   position: absolute;
   top: 1rem;
   width: 1.35rem;
