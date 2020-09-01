@@ -126,60 +126,60 @@ export default class App extends Component {
                 <h4 className="title-out"> Super Powers </h4>
                 <div className="crow">
                   <div className="ccol">
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck1" onChange={(e) => this.handleChange(e,'uiux')}
-                      className="custom-control-input hello" checked={this.state.uiux}/>
+                      className="custom-control-input custom-checkbox hello" checked={this.state.uiux}/>
                       <label className="custom-control-label"
                       htmlFor="customCheck1"> UI/UX designing</label>
                     </div>
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck2" checked={this.state.aws}
                       onChange={(e) => this.handleChange(e, 'aws')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck2"> AWS </label>
                     </div>
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck3"
                       checked={this.state.backend} onChange={(e) => this.handleChange(e, 'backend')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck3"> Backend Dev</label>
                     </div>
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck4"
                       checked={this.state.ml} onChange={(e) => this.handleChange(e, 'ml')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck4"> ML </label>
                     </div>
                   </div>
                   <div className="ccol">
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck5"
                       checked={this.state.frontend} onChange={(e) => this.handleChange(e, 'frontend')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck5"> Frontend </label>
                     </div>
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck6"
                       checked={this.state.cybersec} onChange={(e) => this.handleChange(e, 'cybersec')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck6"> Cybersecurity </label>
                     </div>
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck7"
                       checked={this.state.ai} onChange={(e) => this.handleChange(e, 'ai')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck7"> AI </label>
                     </div>
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck8"
                       checked={this.state.networking} onChange={(e) => this.handleChange(e, 'networking')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck8"> Networking </label>
                     </div>
@@ -191,61 +191,61 @@ export default class App extends Component {
               <h4 className="title-out"> Personal Attributes </h4>
               <div className="crow">
                   <div className="ccol">
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck11"
                       checked={this.state.communication} onChange={(e) => this.handleChange(e, 'communication')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck11"> Communication </label>
                     </div>
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck12"
                       checked={this.state.loyalty} onChange={(e) => this.handleChange(e, 'loyalty')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck12"> Loyalty </label>
                     </div>
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck13"
                       checked={this.state.workethic} onChange={(e) => this.handleChange(e, 'workethic')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck13"> Work ethic</label>
                     </div>
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck14"
                       checked={this.state.flex} onChange={(e) => this.handleChange(e, 'flex')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck14"> Flexibility </label>
                     </div>
                   </div>
                   <div className="ccol">
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck15"
                       checked={this.state.teamplayer} onChange={(e) => this.handleChange(e, 'teamplayer')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck15"> Team player </label>
                     </div>
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck16"
                       checked={this.state.honesty} onChange={(e) => this.handleChange(e, 'honesty')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck16"> Honesty </label>
                     </div>
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck17"
                       checked={this.state.persistence} onChange={(e) => this.handleChange(e, 'persistence')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck17"> Persistence </label>
                     </div>
-                    <div className="custom-control custom-checkbox ccol">
+                    <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck18"
                       checked={this.state.time} onChange={(e) => this.handleChange(e, 'time')}
-                      className="custom-control-input hello"/>
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
                       htmlFor="customCheck18"> Time </label>
                     </div>

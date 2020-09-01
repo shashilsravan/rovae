@@ -1,10 +1,12 @@
 .myCard{
-    margin: 2rem auto;
-    border: 1px solid gray;
+    margin: 1rem auto;
     display: block;
     background: #191919;
-    border-radius: 15px;
     width: 300px;
+    border: 2px solid #323232;
+    box-sizing: border-box;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 51.1542px 51.419px rgba(0, 0, 0, 0.0182814), 0px 31.2614px 32.7222px rgba(0, 0, 0, 0.0145485), 0px 19.7px 20.341px rgba(0, 0, 0, 0.0131802), 0px 12.1574px 11.8781px rgba(0, 0, 0, 0.012699), 0px 6.89112px 6.09643px rgba(0, 0, 0, 0.0121579), 0px 3.01109px 2.28593px rgba(0, 0, 0, 0.0102347);
+    border-radius: 32px;
 }
 .slider {
     -webkit-appearance: none;
@@ -25,6 +27,7 @@
     height: 25px;
     border-radius: 50%; 
     background: white;
+    color: white;
     cursor: pointer;
   }
   
@@ -36,23 +39,27 @@
     cursor: pointer;
   }
 .activated{
-    background: #373737 !important;
     color: white !important;
     margin-left: 1.4rem !important;
-    font-weight: 500;
+    font-weight: 800;
     border-color: white;
+    background: linear-gradient(180deg, #2B2D37 0%, #1D1E24 100%);
+    border: 2px solid #575767;
+    box-sizing: border-box;
+    border-radius: 100px;
 }
 .btn{
-    color: #9898a0;
+    color: #9898A0;
     background: #000;
-    border-radius: 15px;
+    border-radius: 100px;
     font-family: Inter;
-    font-weight: 600;
-    margin: 1rem 0.5rem;
+    font-weight: 800;
+    font-family: 15px;
+    margin: 0rem 0.5rem 1rem 0.5rem;
     /* border-color: #9898a0; */
 }
 .superpower{
-    padding: 0.5rem 1.5rem;
+    padding: 0.25rem 1.5rem;
     color: white;
     font-family: Inter;
 }
@@ -67,13 +74,12 @@
     font-size: 15px;
     word-spacing: 0.2rem;
     text-transform: capitalize;
-    padding: 0.5rem 0 2rem 0;
+    padding: 0.5rem 0 1rem 0;
     border-bottom: 1px solid #575767;
 }
 .card-header{
     display: flex;
-    margin: 0.8rem 0;
-    margin-left: -30px;
+    margin-left: -40px;
     align-content: center;
     align-items: center;
     color: #ebebeb;
@@ -84,9 +90,20 @@
     border-radius: 50px;
     border: 3px solid;
     border-color: #0086ff;
-    margin-right: 25px;
+    margin-right: 15px;
 }
+
 .card-header h3{
-    margin-top: 0.4rem;
+    margin-top: 0.5rem;
     font-size: 20px;
+    color: #EBEBEB;
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.15);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+}
+@media(min-width:700px){
+    .myCard{
+        margin: 1rem 0;
+    }
 }

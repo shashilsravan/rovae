@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import './CardContainer.css'
+
 import Card from './Card'
 import data from '../data/data'
 export default class CardContainer extends Component {
@@ -25,7 +26,7 @@ export default class CardContainer extends Component {
             honesty: props.props.honesty,
             persistence: props.props.persistence,
             time: props.props.time,
-            cards: data
+            cards: data,
         }
         this.checkProps = this.checkProps.bind(this)
     }

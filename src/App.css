@@ -10,7 +10,6 @@
   background: #191919;
   font-family: Inter;
   color: #ebebeb;
-
 }
 .navbar-top{
   display: flex;
@@ -34,7 +33,7 @@
   font-size: 16px;
 }
 .line{
-  margin: 1rem auto;
+  margin: 1.3rem auto;
   width: 100%;
   border-bottom: 0.1rem solid #575767;
 }
@@ -67,21 +66,53 @@ li{
   display: none;
 }
 .power-attr{
-  padding: 2rem;
+  padding: 1rem;
   margin: 2rem;
   background: #191919;
-  border: 0.1rem solid;
-  border-radius: 25px;
-  border-color: #575767;
+  border: 2px solid #323232;
+  box-sizing: border-box;
+  border-radius: 24px;
+}
+.checkbox-lg .custom-control-label::before{
+  content: "";
+  background-color: black;
+  border: none;
+  border-radius: 20px;
+  top: 0.05rem;
+  left: -1.6rem;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.custom-control-input:focus
+{
+  border-radius: 10px;
+  outline: 0;
+}
+
+.custom-control-label{
+  padding-left: 5px;
+  border-radius: 10px;
+}
+
+.custom-checkbox{
+  padding: 0.1rem;
+  border-radius: 10px;
 }
 .custom-checkbox
 .custom-control-label::before {
-  border-color: gray;
-  border-radius: 0px;
-  background-color: black;
+  border-radius: 10px;
+}
+.checkbox-lg .custom-checkbox:checked
+.custom-control-label::after{
+  border-radius: 15px;
+  position: absolute;
+  top: 1rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  background-color: #0086FF;
 }
 .title-out{
-  color: #cccdcd;
+  color: #8f8f90;
   font-family: Inter;
   font-size: 20px;
   text-align: center;
@@ -95,10 +126,11 @@ li{
 }
 .ccol{
   display: flex;
-  margin: 0.3rem 0.5rem;
+  margin: 0.3rem 1rem;
 }
 .custom-control-label{
-  color: white;
+  color: #CCCDCD;
+  padding:0.3rem;
   font-size: 13px;
   font-weight: 600;
   font-family: Inter;
@@ -107,11 +139,22 @@ li{
   .hide{
     display: inline;
   }
+  .custom-control-label{
+    padding: 0;
+  }
+  .each{
+    margin: 0 auto;
+  }
   .navbar-image{
     grid-area: hello;
     height: 100px;
+    top: 20px;
     margin-left: 2.5rem;
     width: auto;
+  }
+  .title-out{
+    margin-left: 2rem;
+    text-align: left;
   }
   .navbar-top{
     position: absolute;
@@ -121,6 +164,10 @@ li{
   .search-option{
     position: absolute;
     top: 130px;
+    background: #000000;
+    border: 1px solid #0086FF;
+    box-shadow: 0px 0px 0px 4px rgba(0, 134, 255, 0.31);
+    border-radius: 8px;
   }
   .navbar-top span{
     position: absolute !important;
@@ -129,8 +176,8 @@ li{
   }
   .navbar{
     height: 100vh;
-    width: 260px;
-    border-right: 0.01rem solid #8c8ca1;
+    width: 255px;
+    border-right: 2px solid #323232;
   }
   .title-in{
     margin: 0.7rem 1rem;
@@ -155,33 +202,36 @@ li{
   }
   .remaining{
     position: absolute;
-    left: 270px;
+    left: 280px;
     width: 80%;
     top: 20px;
   }
   .power-attr{
     display: flex;
+    margin-top: 10px;
     align-content: space-around;
     align-items: center;
   }
   .vline{
-    margin: 0 3rem;
+    margin: 0 1rem;
     border-left: 1px solid gray;
     height: 100px;
   }
   .custom-control-label{
-    color: white;
-    font-size: 15px;
+    color: #CCCDCD;
+    padding-left: 4px;
+    font-size: 12px;
     font-weight: 600;
     font-family: Inter;
   }
 }
 @media screen and (max-width:450px){
   .search-option{
-    margin-left: 60px;
+    margin-left: 70px;
   }
   .ccol{
     display: flex;
+    margin: 0rem 1rem;
     flex-direction: column;
   }
 }

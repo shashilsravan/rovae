@@ -1,7 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Card.css'
+import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
+import RangeSlider from 'react-bootstrap-range-slider';
+
 export default function Card(props) {
     const each = props.props
+    const [ value, setValue ] = useState(15); 
     const stringify = (each) => {
         return each.join(", ")
     }
@@ -34,15 +38,22 @@ export default function Card(props) {
                 {stringify(each.personal)}
                 </h6>
             </div>
-            <div className="slidecontainer w3-animate-bottom" style={{padding: '0.25rem 2rem 2rem 2rem'}}>
-                <input type="range" min="1" max="100" value="20" className="slider" id="myRange" />
-            </div>
+            <RangeSlider
+                style={{}}
+                className="p-3"
+                value={value}
+                onChange={changeEvent => {
+                    setValue(changeEvent.target.value)
+                    console.log(value)
+                }}
+            />
             <div className="footer d-flex w3-animate-right">
-                <div className="font-weight-bold text-primary text-uppercase"
+                <div 
+                className={value < 50? "font-weight-bold text-primary text-uppercase" : "font-weight-bold text-muted text-uppercase float-right"}
                 style={{fontSize:12,padding:'0 2.5rem 1.5rem 2.25rem'}}>
                     Introvert
                 </div>
-                <div className="font-weight-bold text-muted text-uppercase float-right"
+                <div className={value >= 50 ? "font-weight-bold text-primary text-uppercase" : "font-weight-bold text-muted text-uppercase float-right"}
                 style={{fontSize:12,padding:'0 5rem 0rem 1rem', marginLeft: '2rem'}}>
                     Extrovert
                 </div>
