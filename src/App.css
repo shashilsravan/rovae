@@ -104,7 +104,7 @@ li{
 }
 .checkbox-lg .custom-checkbox:checked
 .custom-control-label::after{
-  border-radius: 15px;
+  border-radius: 10px;
   position: absolute;
   top: 1rem;
   width: 1.35rem;
