@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/rovae/static/css/main.84346f99.chunk.css",
-    "main.js": "/rovae/static/js/main.e7438774.chunk.js",
-    "main.js.map": "/rovae/static/js/main.e7438774.chunk.js.map",
+    "main.css": "/rovae/static/css/main.4816e0ba.chunk.css",
+    "main.js": "/rovae/static/js/main.e86ba5d4.chunk.js",
+    "main.js.map": "/rovae/static/js/main.e86ba5d4.chunk.js.map",
     "runtime-main.js": "/rovae/static/js/runtime-main.4a1ac055.js",
     "runtime-main.js.map": "/rovae/static/js/runtime-main.4a1ac055.js.map",
-    "static/css/2.9c2a5988.chunk.css": "/rovae/static/css/2.9c2a5988.chunk.css",
-    "static/js/2.8a3a5032.chunk.js": "/rovae/static/js/2.8a3a5032.chunk.js",
-    "static/js/2.8a3a5032.chunk.js.map": "/rovae/static/js/2.8a3a5032.chunk.js.map",
+    "static/css/2.11829350.chunk.css": "/rovae/static/css/2.11829350.chunk.css",
+    "static/js/2.cc384300.chunk.js": "/rovae/static/js/2.cc384300.chunk.js",
+    "static/js/2.cc384300.chunk.js.map": "/rovae/static/js/2.cc384300.chunk.js.map",
     "index.html": "/rovae/index.html",
-    "precache-manifest.6e7c13c6a18257e885c3e671d431238c.js": "/rovae/precache-manifest.6e7c13c6a18257e885c3e671d431238c.js",
+    "precache-manifest.ccd8658e1e2eed80e4e9e8911800b6e1.js": "/rovae/precache-manifest.ccd8658e1e2eed80e4e9e8911800b6e1.js",
     "service-worker.js": "/rovae/service-worker.js",
-    "static/css/2.9c2a5988.chunk.css.map": "/rovae/static/css/2.9c2a5988.chunk.css.map",
-    "static/css/main.84346f99.chunk.css.map": "/rovae/static/css/main.84346f99.chunk.css.map",
-    "static/js/2.8a3a5032.chunk.js.LICENSE.txt": "/rovae/static/js/2.8a3a5032.chunk.js.LICENSE.txt",
+    "static/css/2.11829350.chunk.css.map": "/rovae/static/css/2.11829350.chunk.css.map",
+    "static/css/main.4816e0ba.chunk.css.map": "/rovae/static/css/main.4816e0ba.chunk.css.map",
+    "static/js/2.cc384300.chunk.js.LICENSE.txt": "/rovae/static/js/2.cc384300.chunk.js.LICENSE.txt",
     "static/media/Logo-01.svg": "/rovae/static/media/Logo-01.dc99b7a3.svg",
     "static/media/logo.svg": "/rovae/static/media/logo.2de07da2.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4a1ac055.js",
-    "static/css/2.9c2a5988.chunk.css",
-    "static/js/2.8a3a5032.chunk.js",
-    "static/css/main.84346f99.chunk.css",
-    "static/js/main.e7438774.chunk.js"
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.cc384300.chunk.js",
+    "static/css/main.4816e0ba.chunk.css",
+    "static/js/main.e86ba5d4.chunk.js"
   ]
 }
