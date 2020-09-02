@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8d196a107c906ee90fb18094aa90c0c4",
+    "revision": "6394f719d8e0a3a33921608e167d5c45",
     "url": "/rovae/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rovae/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "2102cbbf2a9e7f49e4f2",
-    "url": "/rovae/static/css/main.bedc22e1.chunk.css"
+    "revision": "6edf06c04489e5b9bad2",
+    "url": "/rovae/static/css/main.0f325292.chunk.css"
   },
   {
     "revision": "2330313c72ea164fcdab",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rovae/static/js/2.cc384300.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2102cbbf2a9e7f49e4f2",
-    "url": "/rovae/static/js/main.e86ba5d4.chunk.js"
+    "revision": "6edf06c04489e5b9bad2",
+    "url": "/rovae/static/js/main.577ea2ec.chunk.js"
   },
   {
     "revision": "0c52da42fac519a4f4b4",
