@@ -1,8 +1,12 @@
 import React, {useState} from 'react'
 import './Card.css'
-import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
-import RangeSlider from 'react-bootstrap-range-slider';
 
+function handleClick(e){
+    // if ( !e.target.classList.contains('activated')){
+    //     e.target.classList.add('activated')
+    // }
+    console.log('button clicked')
+}
 export default function Card(props) {
     const each = props.props
     const [ value, setValue ] = useState(15); 
@@ -16,13 +20,16 @@ export default function Card(props) {
                 <h3 style={{textTransform:'capitalize'}}> {each.name} </h3>
             </div>
             <div className="card-header-below w3-animate-top">
-                <button className="btn activated">
+                <button className="btn activated" 
+                onClick={(e) => handleClick(e)}>
                     About
                 </button>
-                <button className="btn muted">
+                <button className="btn muted" 
+                onClick={(e) => handleClick(e)}>
                     Bio
                 </button>
-                <button className="btn muted">
+                <button className="btn muted" 
+                onClick={(e) => handleClick(e)}>
                     Contact
                 </button>
             </div>
@@ -33,21 +40,21 @@ export default function Card(props) {
                 </h6>
             </div>
             <div className="superpower w3-animate-top">
-                <h5>personal attributes</h5>
+                <h5 style={{fontFamily:"Inter"}}>personal attributes</h5>
                 <h6 className="powers-list">
                 {stringify(each.personal)}
                 </h6>
             </div>
-            <RangeSlider
-                style={{}}
-                className="p-3"
-                value={value}
+            <input 
+            className="range-slider__range"
+            type="range"
+            value={value}
                 onChange={changeEvent => {
                     setValue(changeEvent.target.value)
                     console.log(value)
                 }}
-            />
-            <div className="footer d-flex w3-animate-right">
+            min="0" max="100" />
+            <div className="footer my-2 d-flex w3-animate-right">
                 <div 
                 className={value < 50? "font-weight-bold text-primary text-uppercase" : "font-weight-bold text-muted text-uppercase float-right"}
                 style={{fontSize:12,padding:'0 2.5rem 1.5rem 2.25rem'}}>

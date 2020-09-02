@@ -47,7 +47,7 @@ export default class App extends Component {
     })
   }
   render() {
-    console.log(window.innerWidth)
+    console.log(window.screen.width, window.screen.height)
     return (
       <div>
         <nav className={window.innerWidth < 750? "navbar": "navbar fixed-top"}>
@@ -64,7 +64,7 @@ export default class App extends Component {
             </div>
             <div className={this.state.isToggled? "toggle-btn" : "toggle-btn hide"}>
               <div className="toggled-region w3-animate-top">
-                <h3 className="title-in"> <img src={log} style={{height:15, marginRight: 7}}/> Dashboards</h3>
+                <h3 className="title-in"> <img src={log} style={{height:15, marginRight: 7, marginTop:3}}/> Dashboards</h3>
                 <ol>
                   <li>People</li>
                   <li>Projects</li>
@@ -73,7 +73,8 @@ export default class App extends Component {
                 <div className="line"></div>
                 <h3 className="title-in">
                   <span className="material-icons"
-                    style={{color: '#878787', fontSize:'18px', marginRight: 5}}>insert_drive_file</span>
+                    style={{color: '#878787', fontSize:'18px', marginRight: 5}}>
+                      insert_drive_file</span>
                   Documents
                   <span className="material-icons"
                     style={{color: 'white', fontSize:'18px', marginLeft: 5, marginTop: 2}}>
@@ -126,14 +127,17 @@ export default class App extends Component {
                 <h4 className="title-out"> Super Powers </h4>
                 <div className="crow">
                   <div className="ccol">
-                    <div className="custom-control custom-checkbox checkbox-lg ccol">
-                      <input type="checkbox" id="customCheck1" onChange={(e) => this.handleChange(e,'uiux')}
-                      className="custom-control-input custom-checkbox hello" checked={this.state.uiux}/>
+                  <div className="custom-control custom-checkbox checkbox-lg ccol">
+                      <input type="checkbox" id="customCheck1" checked={this.state.uiux}
+                      onChange={(e) => this.handleChange(e,'uiux')}
+                      className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
-                      htmlFor="customCheck1"> UI/UX designing</label>
+                      htmlFor="customCheck1"> UX/UI Design </label>
                     </div>
+
                     <div className="custom-control custom-checkbox checkbox-lg ccol">
-                      <input type="checkbox" id="customCheck2" checked={this.state.aws}
+                      <input type="checkbox" id="customCheck2"
+                      checked={this.state.aws}
                       onChange={(e) => this.handleChange(e, 'aws')}
                       className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
@@ -203,7 +207,7 @@ export default class App extends Component {
                       checked={this.state.loyalty} onChange={(e) => this.handleChange(e, 'loyalty')}
                       className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
-                      htmlFor="customCheck12"> Loyalty </label>
+                      htmlFor="customCheck12"> Loyal </label>
                     </div>
                     <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck13"

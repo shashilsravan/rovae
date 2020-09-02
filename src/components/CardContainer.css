@@ -2,7 +2,7 @@
     width: 80vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-row-gap: 0.9rem;
     /* grid-column-gap: 2px; */
 }
@@ -16,4 +16,9 @@
     color: orange;
     animation-iteration-count: infinite;
     font-size: 2rem;
+}
+@media(min-width:700px){
+    .card-container{
+        margin: 0rem 1.6rem;
+    }
 }

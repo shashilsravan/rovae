@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
 
 .boddy{
   background: #000000;
@@ -16,6 +18,12 @@
   align-items: center;
   align-content: center;
 }
+.search-option::placeholder{
+  font-family: 'Work';
+  font-size: 16px;
+  color: #8C8CA1;
+  line-height: 140%;
+}
 .search-option{
   margin: 1rem 0;
   border-radius: 10px;
@@ -27,10 +35,12 @@
   background: black;
   font-family: "Work Sans";
 }
+
 .title-in{
   /* text-align: center; */
+  font-family: "Work Sans";
   display: flex;
-  font-size: 16px;
+  font-size: 18px;
 }
 .line{
   margin: 1.3rem auto;
@@ -39,6 +49,7 @@
 }
 li{
   font-size: 14px;
+  font-family: "Work Sans";
   list-style: none;
 }
 .hide{
@@ -79,9 +90,9 @@ li{
   border: none;
   border-radius: 5px;
   top: 0.05rem;
-  left: -1.6rem;
-  width: 1.35rem;
-  height: 1.35rem;
+  left: -1.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .custom-control-input:focus
 {
@@ -89,12 +100,8 @@ li{
   outline: 0;
 }
 
-.custom-control-label{
-  padding-left: 5px;
-}
-
 .custom-checkbox{
-  padding: 0.1rem;
+  /* padding: 0.1rem; */
   border-radius: 5px;
 }
 .custom-checkbox
@@ -106,22 +113,23 @@ li{
   border-radius: 5px;
   position: absolute;
   top: 1rem;
-  width: 1.35rem;
-  height: 1.35rem;
-  background-color: #0086FF;
+  width: 1.4rem;
+  height: 1.4rem;
+  transform: scale(2);
+  background-color: #0086FF !important;
 }
 .title-out{
   color: #8f8f90;
   font-family: Inter;
   font-size: 20px;
   text-align: center;
-  font-weight: 600;
+  font-weight: bold;
   margin: 1rem 0;
 }
 .vline{
   margin-top: 1.2rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid gray;
+  border-bottom: 2px solid #323232;
 }
 .ccol{
   display: flex;
@@ -129,10 +137,15 @@ li{
 }
 .custom-control-label{
   color: #CCCDCD;
-  padding:0.3rem;
+  padding:0rem 0.5rem;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 800;
   font-family: Inter;
+  font-size: 20px;
+  flex: none;
+  order: 1;
+  align-self: center;
+  letter-spacing: 0.04em;
 }
 @media screen and (min-width:750px){
   .hide{
@@ -175,11 +188,15 @@ li{
   }
   .navbar{
     height: 100vh;
-    width: 255px;
+    width: 260px;
     border-right: 2px solid #323232;
+  }
+  .title-in span{
+    margin-top: 0px;
   }
   .title-in{
     margin: 0.7rem 1rem;
+    line-height: 20px;
   }
   li{
     margin: 0.20rem 0;
@@ -213,14 +230,15 @@ li{
   }
   .vline{
     margin: 0 1rem;
-    border-left: 1px solid gray;
+    border-left: 2px solid #323232;
     height: 100px;
   }
   .custom-control-label{
     color: #CCCDCD;
-    padding-left: 4px;
-    font-size: 12px;
-    font-weight: 600;
+    padding-left: 3px;
+    margin-right: 0;
+    font-size: 14px;
+    font-weight: 800;
     font-family: Inter;
   }
 }
@@ -228,9 +246,31 @@ li{
   .search-option{
     margin-left: 70px;
   }
+  .checkmark{
+    top:0.8rem;
+    left: -1.5rem;
+  }
+  .checkmark1{
+    left: 1rem;
+  }
   .ccol{
     display: flex;
     margin: 0rem 1rem;
     flex-direction: column;
+  }
+}
+@media screen and (min-width:1800px){
+  .title-in{
+    font-size: 24px;
+    margin-top: 1.5rem;
+  }
+  .toggled-region ol li{
+    font-size: 24px;
+  }
+  .title-out{
+    font-size: 36px;
+  }
+  .custom-control-label{
+    font-size: 20px;
   }
 }
