@@ -214,7 +214,7 @@ export default class App extends Component {
                       checked={this.state.workethic} onChange={(e) => this.handleChange(e, 'workethic')}
                       className="custom-control-input custom-checkbox hello"/>
                       <label className="custom-control-label"
-                      htmlFor="customCheck13"> Work ethic</label>
+                      htmlFor="customCheck13"> WorkEthic</label>
                     </div>
                     <div className="custom-control custom-checkbox checkbox-lg ccol">
                       <input type="checkbox" id="customCheck14"

@@ -229,15 +229,15 @@ li{
     align-items: center;
   }
   .vline{
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     border-left: 2px solid #323232;
-    height: 100px;
+    height: 120px;
   }
   .custom-control-label{
     color: #CCCDCD;
-    padding-left: 3px;
+    padding-left: 2.5px;
     margin-right: 0;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 800;
     font-family: Inter;
   }
