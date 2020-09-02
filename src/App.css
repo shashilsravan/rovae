@@ -249,6 +249,9 @@ li{
   .ccol{
     display: flex;
     margin: 0rem 0.8rem;
+    text-align: center;
+    align-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
   }
 }
