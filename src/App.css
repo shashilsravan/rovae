@@ -246,16 +246,9 @@ li{
   .search-option{
     margin-left: 70px;
   }
-  .checkmark{
-    top:0.8rem;
-    left: -1.5rem;
-  }
-  .checkmark1{
-    left: 1rem;
-  }
   .ccol{
     display: flex;
-    margin: 0rem 1rem;
+    margin: 0rem 0.8rem;
     flex-direction: column;
   }
 }
