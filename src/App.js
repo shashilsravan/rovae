@@ -47,7 +47,7 @@ export default class App extends Component {
     })
   }
   render() {
-    console.log(window.screen.width, window.screen.height)
+    console.log(window.innerWidth)
     return (
       <div>
         <nav className={window.innerWidth < 750? "navbar": "navbar fixed-top"}>

@@ -15,6 +15,7 @@ export default function Card(props) {
     }
     return (
         <div className="myCard">
+            <div className="lined"></div>
             <div className="card-header">
                 <img src={each.image} alt="" className="w3-animate-left" />
                 <h3 style={{textTransform:'capitalize'}}> {each.name} </h3>
