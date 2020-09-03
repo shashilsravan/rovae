@@ -9,7 +9,8 @@ function handleClick(e){
 }
 export default function Card(props) {
     const each = props.props
-    const [ value, setValue ] = useState(15); 
+    const randomNum = Math.random() * 85
+    const [ value, setValue ] = useState(randomNum); 
     const stringify = (each) => {
         return each.join(", ")
     }
